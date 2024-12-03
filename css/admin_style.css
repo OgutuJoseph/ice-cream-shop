@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*--------------- Variables -------------*/
+:root {
+    --space: 2rem;
+    --main-color: #da6285;
+    --pink-color: #ff839d;
+    --pink-opacity: #ffe6e9;
+    --white-alpha-40: rgba(255, 255, 255, 0.40);
+    --white-alpha-25: rgba(255, 255, 255, 0.25);
+    --backdrop-filter: blur(5px);
+    --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.40);
+}
+
+/*--------------- Global styling -------------*/
+body {
+    background-image: url('../image/bg1.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-25);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow: var(--box-shadow);
+    text-transform: capitalize;
+    color: var(--main-color);
+    padding: .8rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 30px;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
