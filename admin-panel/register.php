@@ -26,6 +26,8 @@
                         <p>Your Email <span>*</span></p>
                         <input type="email" name="email" placeholder="Enter Your Email" maxLength="5" required class="box" >
                     </div>
+                </div>
+                <div class="col">
                     <div class="input-field">
                         <p>Your Password <span>*</span></p>
                         <input type="password" name="pass" placeholder="Enter Your Password" maxLength="5" required class="box" >
@@ -33,15 +35,15 @@
                     <div class="input-field">
                         <p>Confirm Password <span>*</span></p>
                         <input type="password" name="cpass" placeholder="Confirm Your Password" maxLength="5" required class="box" >
-                    </div>
-                    <div class="input-field">
-                        <p>Your Photo <span>*</span></p>
-                        <input type="file" name="image" accept="image/*" required class="box" >
-                    </div>
-                    <p class="link">Already have an Account? <a href="login.php">Login Here</a></p>
-                    <input type="submit" name="submi" value="Register Now" class="btn" >
-                </div>
+                    </div>                    
+                </div>                
             </div>
+            <div class="input-field">
+                <p>Your Photo <span>*</span></p>
+                <input type="file" name="image" accept="image/*" required class="box" >
+            </div>
+            <p class="link">Already have an Account? <a href="login.php">Login Here</a></p>
+            <input type="submit" name="submi" value="Register Now" class="btn" >
         </form>
     </div>
     
