@@ -1,23 +1,11 @@
 <?php 
     include '../components/connect.php';
 
-    if (isset($_POST['submit'])) {
-        $email = $_POST['email'];
-        $email = filter_var($email, FILTER_SANITIZE_SPECIAL_CHARS);    
-
-        $pass = sha1($_POST['pass']);
-        $pass = filter_var($pass, FILTER_SANITIZE_SPECIAL_CHARS);   
-        
-        $select_seller = $conn->prepare("SELECT * FROM `sellers` WHERE email = ? AND password = ?");
-        $select_seller->execute([$email, $pass]);
-        $row = $select_seller->fetch(PDO::FETCH_ASSOC);
-
-        if ($select_seller->rowCount() > 0) {
-            setcookie('seller_id', $row['id'], time() + 60*60*24*30, '/');
-            header('location:dashboard.php');
-        } else {
-            $info_msg[] = 'Incorrect username or password.';
-        }
+    if (isset($_COOKIE['seller_id'])) {
+        $seller_id = $_COOKIE['seller_id'];
+    } else {
+        $seller_id = '';
+        header('location:login.php');
     }
 ?>
 <!DOCTYPE html>
@@ -32,9 +20,11 @@
 </head>
 <body>
 
-    <?php
-        include '../components/admin_header.php';
-    ?>
+    <div>
+        <?php
+            include '../components/admin_header.php';
+        ?>
+    </div>
    
     
     <!-- Sweet Alert CDN Link -->
