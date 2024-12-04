@@ -37,13 +37,13 @@
 
     if (isset($info_msg)) {
         foreach ($info_msg as $msg) {
-            echo "<script>swal('Info!', '$msg', 'success');</script>";
+            echo "<script>swal('Info!', '$msg', 'info');</script>";
         }
     }
 
     if (isset($error_msg)) {
         foreach ($error_msg as $msg) {
-            echo "<script>swal('Error!', '$msg', 'warning');</script>";
+            echo "<script>swal('Error!', '$msg', 'error');</script>";
         }
     }
 ?>
