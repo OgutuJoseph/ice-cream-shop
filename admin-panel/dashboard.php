@@ -17,21 +17,27 @@
     <link rel="stylesheet" type="text/css" href="../css/admin_style.css" >
     <!-- Font Awesome CDN Link -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" >
-     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+     <!-- Box Icon CDN Link -->
+     <!-- <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> -->
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" >
+
 </head>
 <body>
 
-    <div>
+    <div class="main-container">
         <?php
             include '../components/admin_header.php';
         ?>
     </div>
+    <!-- <section>
+
+    </section> -->
    
     
     <!-- Sweet Alert CDN Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <!-- Custom JS Link -->
-    <script src="../js/script.js"></script>
+    <script src="../js/admin_script.js"></script>
     <?php
         include '../components/alert.php';
     ?>
