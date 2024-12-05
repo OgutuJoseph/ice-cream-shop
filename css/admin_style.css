@@ -338,7 +338,7 @@ header .right {
     }
 }
 
-.profile-detail .active {
+.profile-detail.active {
     display: inline-block;
 }
 
@@ -491,7 +491,7 @@ header .right {
         z-index: 101;
         top: 7%;
     }
-    .sidebar .active {
+    .sidebar.active {
         width: 300px;
     }
     .sidebar .profile {
