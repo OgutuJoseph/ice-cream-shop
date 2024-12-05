@@ -28,10 +28,30 @@
         <?php
             include '../components/admin_header.php';
         ?>
-    </div>
-    <!-- <section>
-
-    </section> -->
+        <section class="dashboard">
+            <div class="heading">
+                <h1>Dashboard</h1>
+                <img src="../image/separator-img.png" >
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <h3>Welcome !</h3>
+                    <p><?= $fetch_profile['name'] ?></p>
+                    <a href="update.php" class="btn">Update Profile</a>
+                </div>
+                <div class="box">
+                    <?php
+                        $select_message = $conn->prepare("SELECT * FROM `message`");
+                        $select_message->execute();
+                        $number_of_message = $select_message->rowCount();
+                    ?>
+                    <h3><?= $number_of_message ?></h3>
+                    <p>Unread mesages</p>
+                    <a href="admin_message.php" class="btn">Messages</a>
+                </div>
+            </div>
+        </section>
+    </div>    
    
     
     <!-- Sweet Alert CDN Link -->
