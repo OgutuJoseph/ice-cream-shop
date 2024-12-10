@@ -77,11 +77,13 @@ html {
     padding: 1.5rem;
     text-align: center;
     margin: 2rem auto;
+    width: 50vw;
+    border-radius: .5rem;
+    line-height: 2;
 }
 
 .empty p {
     font-size: 20px;
-    margin-bottom: 2rem;
 }
 
 input[type='submit'] {
