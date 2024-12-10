@@ -150,7 +150,7 @@
                         <input type="file" name="image" accept="image/*" required class="box" >
                     </div>
                     <div class="flex-btn">
-                        <input type="submit" name="publish" value="Add Product" class="btn" >
+                        <input type="submit" name="publish" value="Publish Product" class="btn" >
                         <input type="submit" name="draft" value="Save as Draft" class="btn" >
                     </div>
                 </form> 
