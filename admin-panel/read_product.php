@@ -11,6 +11,25 @@
     // Get Product ID
     $get_id = $_GET['post_id'];
     
+    // Delete Product
+    if (isset($_POST['delete'])) {
+        $p_id = $_POST['product_id'];
+        $p_id = filter_var($p_id, FILTER_SANITIZE_SPECIAL_CHARS);   
+
+        $delete_image = $conn->prepare("SELECT * FROM `products` WHERE id = ? AND seller_id = ?");
+        $delete_image->execute([$p_id, $seller_id]);
+
+        $fetch_delete_image = $delete_image->fetch(PDO::FETCH_ASSOC);
+        if ($fetch_delete_image[''] != ''){
+            unlink('../uploaded_files/'.$fetch_delete_image['image']);
+        }
+
+        $delete_product = $conn->prepare("DELETE FROM `products` WHERE id = ? and seller_id = ?");
+        $delete_product->execute([$p_id, $seller_id]);
+
+        $success_msg[] = 'Product deleted successfully.';
+        header("location:view_products.php");
+    }
     
 ?>
 <!DOCTYPE html>
