@@ -7,6 +7,61 @@
         $seller_id = '';
         header('location:login.php');
     }
+
+    // Update Product
+    if(isset($_POST['update'])) {
+        $product_id = $_POST['product_id'];
+        $product_id = filter_var($product_id, FILTER_SANITIZE_SPECIAL_CHARS);
+
+        $name = $_POST['name'];
+        $name = filter_var($name, FILTER_SANITIZE_SPECIAL_CHARS);
+        
+        $price = $_POST['price'];
+        $price = filter_var($price, FILTER_SANITIZE_SPECIAL_CHARS);
+        
+        $description = $_POST['description'];
+        $description = filter_var($description, FILTER_SANITIZE_SPECIAL_CHARS);
+        
+        $stock = $_POST['stock'];
+        $stock = filter_var($stock, FILTER_SANITIZE_SPECIAL_CHARS);
+
+        $status = $_POST['status'];
+        $status = filter_var($status, FILTER_SANITIZE_SPECIAL_CHARS);
+
+        $update_product = $conn->prepare("UPDATE `products` SET name = ?, price = ?, product_detail = ?, stock = ?, status = ? WHERE id = ?");
+        $update_product->execute([$name, $price, $description, $stock, $status, $product_id]);
+
+        $success_msg[] = "Product Updated Successfully.";
+
+        $old_image = $_POST['old_image'];
+        $image = $_FILES['image']['name'];
+        $image = filter_var($image, FILTER_SANITIZE_SPECIAL_CHARS);
+        // $ext = pathinfo($image, PATHINFO_EXTENSION);;
+        // $rename = unique_id().'.'.$ext;
+        $image_size = $_FILES['image']['size'];
+        $image_tmp_name = $_FILES['image']['tmp_name'];
+        $image_folder = '../uploaded_files/'.$image;
+        $select_image = $conn->prepare("SELECT * FROM `products` WHERE image = ? AND seller_id = ?");
+        $select_image->execute([$image, $seller_id]);
+
+        if (!empty($image)) {
+            if ($image_size > 2000000) {
+                $warning_msg[] = "Image size is too large.";
+            } elseif($select_image->rowCount() > 0){
+                $warning_msg[] = "Please rename your image";
+            } else {
+                $update_image = $conn->prepare("UPDATE `products` SET image = ? WHERE id = ?");
+                $update_image->execute([$image, $product_id]);
+                move_uploaded_file($image_tmp_name, $image_folder);
+                if ($old_image != $image AND $old_image != '') {
+                    unlink('../uploaded_files/'.$old_image);
+                }
+                $success_msg[] = "Image Updated Successsfully.";
+            }
+        }
+        
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -78,10 +133,15 @@
                                     <img src="../uploaded_files/<?= $fetch_product['image']; ?>" class="image">
                                     <div class="flex-btn">
                                         <input type="submit" name="delete_image" class="btn" onclick="return confirm('Are you sure you want to delete this image?');" value="Delete Image">
-                                        <!-- <a href="view_products.php" class="btn" style="width: 49%; text-align: center; height: 3rem; margin-top: .7rem;">Back to Products</a> -->
-                                        <a href="view_products.php" class="btn" >Go Back</a>
+                                        <!-- <a href="view_products.php" class="btn" style="width: 49%; text-align: center; height: 3rem; margin-top: .7rem;">Go Back</a> -->
+                                        <a href="view_products.php" class="btn" style="width: 49%;">Go Back</a>
                                     </div>
                                 <?php } ?>
+                            </div>
+                            <br><br>
+                            <div class="flex-btn">
+                                <input type="submit" name="update" class="btn" value="Update Product">
+                                <input type="submit" name="delete_post" class="btn" value="Delete Product">
                             </div>
                         </form>
                     </div>
@@ -99,11 +159,6 @@
                             ';
                         }
                     ?>
-                    <br><br>
-                    <div class="flex-btn">
-                        <a href="view_products.php" class="btn" >View More Products</a>
-                        <a href="add_product.php" class="btn" >Add Product</a>
-                    </div>
                 </div>
             </div>
         </section>
