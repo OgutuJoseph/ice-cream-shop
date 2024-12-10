@@ -75,7 +75,7 @@
                         $select_inactive_products->execute([$seller_id, 'inactive']);
                         $number_of_inactive_products = $select_inactive_products->rowCount();
                     ?>
-                    <h3><?= $number_of_active_products ?></h3>
+                    <h3><?= $number_of_inactive_products ?></h3>
                     <p>Inactive Products</p>
                     <a href="view_products.php" class="btn">Inactive Products</a>
                 </div>
