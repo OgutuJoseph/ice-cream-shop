@@ -62,6 +62,26 @@
         
     }
 
+    // Delete Image
+    if (isset($_POST['delete_image'])) {
+        $empty_image = '';
+
+        $product_id = $_POST['product_id'];
+        $product_id = filter_var($product_id, FILTER_SANITIZE_SPECIAL_CHARS);
+
+        $delete_image = $conn->prepare("SELECT * FROM `products` WHERE id = ?");
+        $delete_image->execute([$product_id]);
+        $fetch_delete_image = $delete_image->fetch(PDO::FETCH_ASSOC);
+
+        if ($fetch_delete_image['image'] != '') {
+            unlink('../uploaded_files/'.$fetch_delete_image['image']);
+        }
+        $unset_image = $conn->prepare("UPDATE `products` SET image = ? WHERE id = ?");
+        $unset_image->execute([$empty_image, $product_id]);
+
+        $success_msg[] = "Image Deleted Successfully.";
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
