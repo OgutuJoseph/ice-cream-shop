@@ -66,6 +66,35 @@
                 $success_msg[] = "Image updated successfully.";
             }
         }
+
+        // Update password
+        $empty_pass = 'asng88780wepppoeterooeriei3666688800111asasas';
+
+        $old_pass = sha1($_POST['old_pass']);
+        $old_pass = filter_var($old_pass, FILTER_SANITIZE_SPECIAL_CHARS);
+
+        $new_pass = sha1($_POST['new_pass']);
+        $new_pass = filter_var($new_pass, FILTER_SANITIZE_SPECIAL_CHARS);
+        
+        $c_pass = sha1($_POST['c_pass']);
+        $c_pass = filter_var($c_pass, FILTER_SANITIZE_SPECIAL_CHARS);
+
+        if ($old_pass != $empty_pass) {
+            if ($old_pass != $prev_pass) {
+                $warning_msg[] = "Old Password Not Matched.";
+            } elseif ($new_pass != $c_pass) {
+                $warning_msg[] = "New and Confirmed Passwords Dont Match.";
+            } else {
+                if ($new_pass != $empty_pass) {
+                    $update_pass = $conn->prepare("UPDATE `sellers` SET password = ? WHERE id = ?");
+                    $update_pass->execute([$c_pass, $seller_id]);
+                    $success_msg[] = "Password Updated Successfully.";
+                } else {
+                    $warning_msg[] = "Please Enter New Password.";
+                }
+            }
+        }
+
     }
 
 ?>
