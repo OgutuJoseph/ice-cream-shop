@@ -8,6 +8,66 @@
         header('location:login.php');
     }
 
+    if (isset($_POST['submit'])) {
+        $select_seller = $conn->prepare("SELECT * FROM `sellers` WHERE id = ? LIMIT 1");
+        $select_seller->execute([$seller_id]);
+        $fetch_seller = $select_seller->fetch(PDO::FETCH_ASSOC);
+
+        $prev_pass = $fetch_seller['password'];
+        $prev_image = $fetch_seller['image'];
+
+        $name = $_POST['name'];
+        $name = filter_var($name, FILTER_SANITIZE_SPECIAL_CHARS);
+
+        $email = $_POST['email'];
+        $email = filter_var($email, FILTER_SANITIZE_SPECIAL_CHARS);    
+
+        // Update Name
+        if (!empty($name)) {
+            $update_name = $conn->prepare("UPDATE `sellers` SET name = ? WHERE id = ?");
+            $update_name->execute([$name, $seller_id]);
+            $success_msg[] = "Username Updated Successfully.";
+        }
+
+        // Update Email
+        if (!empty($email)) {
+            $select_email = $conn->prepare("SELECT * FROM `sellers` WHERE id = ? AND email = ?");
+            $select_email->execute([$seller_id, $email]);
+            
+            if ($select_email->rowCount() > 0){
+                $warning_msg[] = "Email Already in Use.";
+            } else {
+                $update_email = $conn->prepare("UPDATE `sellers` SET email = ? WHERE id = ?");
+                $update_email->execute([$email, $seller_id]);
+                $success_msg[] = "User Email Updated Successfully.";
+            }
+        }
+
+        // Update image
+        $image = $_FILES['image']['name'];
+        $image = filter_var($image, FILTER_SANITIZE_SPECIAL_CHARS);
+        $ext = pathinfo($image, PATHINFO_EXTENSION);
+        $rename = unique_id().'.'.$ext;
+        $image_size = $_FILES['image']['size'];
+        $image_temp_name = $_FILES['image']['tmp_name'];
+        $image_folder = '../uploaded_files/'.$rename;
+
+        if (!empty($image)){
+            if ($image_size > 2000000) {
+                $warning_msg[] = "Image size is too large.";
+            } else {
+                $update_image = $conn->prepare("UPDATE `sellers` SET `image` = ? WHERE id = ?");
+                $update_image->execute([$rename, $seller_id]);
+                move_uploaded_file($image_temp_name, $image_folder);
+
+                if ($prev_image != '' AND $prev_image != $rename) {
+                    unlink('../uploaded_files/'.$prev_image);
+                } 
+                $success_msg[] = "Image updated successfully.";
+            }
+        }
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,7 +117,7 @@
                     <div class="col">                        
                         <div class="input-field">
                             <p>Old Password <span>*</span></p>
-                            <input type="password" name="old_pass" placeholder="Enter Your Old Password"  class="box">
+                            <input type="password" name="old_pass" placeholder="Enter Your Old Password"  class="box" autocomplete="off">
                         </div>                      
                         <div class="input-field">
                             <p>New Password <span>*</span></p>
