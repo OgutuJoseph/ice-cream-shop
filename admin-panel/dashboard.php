@@ -107,7 +107,7 @@
                     ?>
                     <h3><?= $number_of_orders ?></h3>
                     <p>All Orders Placed</p>
-                    <a href="admin_order.php" class="btn">Orders</a>
+                    <a href="admin_orders.php" class="btn">Orders</a>
                 </div>
                 <div class="box">
                     <?php
@@ -117,7 +117,7 @@
                     ?>
                     <h3><?= $number_of_confirmed_orders ?></h3>
                     <p>All Confirmed Orders</p>
-                    <a href="admin_order.php" class="btn">Confirmed Orders</a>
+                    <a href="admin_orders.php" class="btn">Confirmed Orders</a>
                 </div>
                 <div class="box">
                     <?php
@@ -127,7 +127,7 @@
                     ?>
                     <h3><?= $number_of_cancelled_orders ?></h3>
                     <p>All Cancelled Orders</p>
-                    <a href="admin_order.php" class="btn">Cancelled Orders</a>
+                    <a href="admin_orders.php" class="btn">Cancelled Orders</a>
                 </div>
             </div>
         </section>

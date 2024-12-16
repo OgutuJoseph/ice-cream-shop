@@ -55,15 +55,15 @@
                     $select_messages = $conn->prepare("SELECT * FROM `message`");
                     $select_messages->execute();
                     if ($select_messages->rowcOUNT() > 0){
-                        while ($fetch_messages = $select_messages->fetch(PDO::FETCH_ASSOC)) {
+                        while ($fetch_message = $select_messages->fetch(PDO::FETCH_ASSOC)) {
 
                 ?>
                 <div class="box">
-                    <h3 class="name"><?= $fetch_messages['name']; ?></h3>
-                    <h4><?= $fetch_messages['subject']; ?></h4>
-                    <p><?= $fetch_messages['message']; ?></p>
+                    <h3 class="name"><?= $fetch_message['name']; ?></h3>
+                    <h4><?= $fetch_message['subject']; ?></h4>
+                    <p><?= $fetch_message['message']; ?></p>
                     <form action="" method="post">
-                        <input type="hidden" name="delete_id" value="<?= $fetch_messages['id'] ?>" >
+                        <input type="hidden" name="delete_id" value="<?= $fetch_message['id'] ?>" >
                         <input type="submit" name="delete_msg" value="Delete Message" class="btn" onclick="return confirm('Are you sure you want to delete this message?');" >
                     </form>
                 </div>
