@@ -57,13 +57,46 @@
 
                     if ($select_orders->rowCount() > 0) {
                         while ($fetch_order = $select_orders->fetch(PDO::FETCH_ASSOC)) {
+                            $total_price = $fetch_order['price'] * $fetch_order['qty'];
 
                 ?>  
                 <div class="box">
-                    <div class="status" style="color: <?php  ?>"></div>
+                    <div class="status" style="color: <?php if($fetch_order['status'] == 'In Progress') {echo "limegreen";} else {echo "red";} ?>"><?= $fetch_order['status']; ?></div>
+                    <div class="details">
+                        <p>User Name : <span><?= $fetch_order['name'] ?></span></p>
+                        <p>User ID : <span><?= $fetch_order['user_id'] ?></span></p>
+                        <p>User Number : <span><?= $fetch_order['number'] ?></span></p>
+                        <p>User Email : <span><?= $fetch_order['email'] ?></span></p>
+                        <p>User Address : <span><?= $fetch_order['address'] ?></span></p>
+                        <p>Order Date : <span><?= $fetch_order['date'] ?></span></p>                    
+                        <p>Product Price : <span><?= $fetch_order['price'] ?></span></p>
+                        <p>Product Qty : <span><?= $fetch_order['qty'] ?></span></p>
+                        <p>Total Price : <span><?= $total_price ?></span></p>
+                        <p>Payment Method : <span><?= $fetch_order['method'] ?></span></p>
+                    </div>
+                    <form action="" method="post">
+                        <input type="hidden" name="order_id" value="<?= $fetch_order['id'] ?>" >
+                        <select name="update_payment" class="box" style="width: 90%;">
+                            <option disabled selected><?= $fetch_order['payment_status'] ?></option>
+                            <option value="Pending">Pending</option>
+                            <option value="Order Delivered">Order Delivered</option>
+                        </select>
+                        <div class="flex-btn">
+                            <input type="submit" name="update_order" value="Update Order" class="btn">
+                            <input type="submit" name="delete_order" value="Delete Order" class="btn">
+                        </div>
+                    </form>
                 </div>
                 <?php
                         }
+                    }else {
+                        echo '
+                            <div class="empty">
+                                <p>
+                                    No orders. 
+                                </p>
+                            </div> 
+                        ';
                     }
                 ?>
             </div>
