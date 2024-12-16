@@ -7,6 +7,23 @@
         $seller_id = '';
         header('location:login.php');
     }
+
+    if (isset($_POST['delete_msg'])) {        
+        $delete_id = $_POST['delete_id'];
+        $delete_id = filter_var($delete_id, FILTER_SANITIZE_SPECIAL_CHARS);
+
+        $verify_delete = $conn->prepare("SELECT * FROM `message` WHERE id = ?");
+        $verify_delete->execute([$delete_id]);
+
+        if ($verify_delete->rowCount() > 0) {
+            echo "Id: " . $delete_id;
+            $delete_message = $conn->prepare("DELETE FROM `message` WHERE id = ?");
+            $delete_message->execute([$delete_id]);
+            $success_msg[] = "Message Deleted Successfully.";
+        } else {
+            $warning_msg[] = "Message Already Deleted.";
+        }
+    } 
 ?>
 <!DOCTYPE html>
 <html lang="en">
