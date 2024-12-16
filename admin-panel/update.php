@@ -1,0 +1,86 @@
+<?php 
+    include '../components/connect.php';
+
+    if (isset($_COOKIE['seller_id'])) {
+        $seller_id = $_COOKIE['seller_id'];
+    } else {
+        $seller_id = '';
+        header('location:login.php');
+    }
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Update Profile</title>
+    <link rel="stylesheet" type="text/css" href="../css/admin_style.css" >
+    <!-- Font Awesome CDN Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" >
+     <!-- Box Icon CDN Link -->
+     <!-- <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> -->
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" >
+
+</head>
+<body>
+
+    <div class="main-container">
+        <?php
+            include '../components/admin_header.php';
+        ?>
+        <section class="form-container">
+            <div class="heading">
+                <h1>Update Profile Details</h1>
+                <img src="../image/separator-img.png" >
+            </div>
+            <form action="" method="post" enctype="multipart/form-data" class="register">
+                <div class="img-box">
+                    <img src="../uploaded_files/<?= $fetch_profile['image'] ?>">
+                </div>
+                <h3>Update Profile</h3>
+                <div class="flex">
+                    <div class="col">                        
+                        <div class="input-field">
+                            <p>Your Name <span>*</span></p>
+                            <input type="text" name="name" placeholder="<?= $fetch_profile['name'] ?>"  class="box">
+                        </div>                      
+                        <div class="input-field">
+                            <p>Your Email <span>*</span></p>
+                            <input type="email" name="email" placeholder="<?= $fetch_profile['email'] ?>"  class="box">
+                        </div>                      
+                        <div class="input-field">
+                            <p>Select Photo <span>*</span></p>
+                            <input type="file" name="image" accept="image/*"  class="box">
+                        </div>
+                    </div>
+                    <div class="col">                        
+                        <div class="input-field">
+                            <p>Old Password <span>*</span></p>
+                            <input type="password" name="old_pass" placeholder="Enter Your Old Password"  class="box">
+                        </div>                      
+                        <div class="input-field">
+                            <p>New Password <span>*</span></p>
+                            <input type="password" name="new_pass" placeholder="Enter New Password"  class="box">
+                        </div>                        
+                        <div class="input-field">
+                            <p>Confirm Password <span>*</span></p>
+                            <input type="password" name="c_pass" placeholder="Confirm New Password"  class="box">
+                        </div>  
+                    </div>
+                </div>
+                <input type="submit" name="submit" value="Update Profile" class="btn">
+            </form>
+        </section>
+    </div>    
+   
+    
+    <!-- Sweet Alert CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <!-- Custom JS Link -->
+    <script src="../js/admin_script.js"></script>
+    <?php
+        include '../components/alert.php';
+    ?>
+</body>
+</html>
