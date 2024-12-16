@@ -47,7 +47,7 @@
                     ?>
                     <h3><?= $number_of_messages ?></h3>
                     <p>Unread mesages</p>
-                    <a href="admin_message.php" class="btn">Messages</a>
+                    <a href="admin_messages.php" class="btn">Messages</a>
                 </div>
                 <div class="box">
                     <?php
