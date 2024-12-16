@@ -8,7 +8,6 @@
         header('location:login.php');
     }
 
-
     // Update Order
     if (isset($_POST['update_order'])){
         $order_id = $_POST['order_id'];
@@ -20,8 +19,25 @@
         $update_payment = $conn->prepare("UPDATE `orders` SET payment_status = ? WHERE id = ?");
         $update_payment->execute([$payment_status, $order_id]);
         $success_msg[] = "Order Details Updated Successfully.";
-
     }
+
+    // Delete Order
+    if (isset($_POST['delete_order'])){
+        $order_id = $_POST['order_id'];
+        $order_id = filter_var($order_id, FILTER_SANITIZE_SPECIAL_CHARS);
+        
+        $verify_delete = $conn->prepare("SELECT * FROM `orders` WHERE id = ?");
+        $verify_delete->execute([$order_id]);
+
+        if ($verify_delete->rowCount() > 0){
+            $delete_order = $conn->prepare("DELETE FROM `orders` WHERE id = ?");
+            $delete_order->execute([$order_id]);
+            $success_msg[] = "Order Deleted Successfully.";
+        } else {
+            $warning_msg[] = "Order Already Deleted.";
+        }
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -81,7 +97,7 @@
                         </select>
                         <div class="flex-btn">
                             <input type="submit" name="update_order" value="Update Order" class="btn">
-                            <input type="submit" name="delete_order" value="Delete Order" class="btn">
+                            <input type="submit" name="delete_order" value="Delete Order" class="btn" onclick="return confirm('Are you sure you want to delete this order?');>
                         </div>
                     </form>
                 </div>
