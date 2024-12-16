@@ -30,7 +30,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Messages</title>
+    <title>Dashboard | Orders</title>
     <link rel="stylesheet" type="text/css" href="../css/admin_style.css" >
     <!-- Font Awesome CDN Link -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" >
@@ -45,38 +45,25 @@
         <?php
             include '../components/admin_header.php';
         ?>
-        <section class="message-container">
+        <section class="order-container">
             <div class="heading">
-                <h1>Inbox</h1>
+                <h1>Orders</h1>
                 <img src="../image/separator-img.png" >
             </div>
             <div class="box-container">
-                <?php 
-                    $select_messages = $conn->prepare("SELECT * FROM `message`");
-                    $select_messages->execute();
-                    if ($select_messages->rowcOUNT() > 0){
-                        while ($fetch_message = $select_messages->fetch(PDO::FETCH_ASSOC)) {
+                <?php
+                    $select_orders = $conn->prepare("SELECT * FROM `orders` WHERE seller_id = ?");
+                    $select_orders->execute([$seller_id]);
 
-                ?>
+                    if ($select_orders->rowCount() > 0) {
+                        while ($fetch_order = $select_orders->fetch(PDO::FETCH_ASSOC)) {
+
+                ?>  
                 <div class="box">
-                    <h3 class="name"><?= $fetch_message['name']; ?></h3>
-                    <h4><?= $fetch_message['subject']; ?></h4>
-                    <p><?= $fetch_message['message']; ?></p>
-                    <form action="" method="post">
-                        <input type="hidden" name="delete_id" value="<?= $fetch_message['id'] ?>" >
-                        <input type="submit" name="delete_msg" value="Delete Message" class="btn" onclick="return confirm('Are you sure you want to delete this message?');" >
-                    </form>
+                    <div class="status" style="color: <?php  ?>"></div>
                 </div>
-                <?php 
+                <?php
                         }
-                    } else {
-                        echo '
-                            <div class="empty">
-                                <p>
-                                    No messages in the inbox. 
-                                </p>
-                            </div> 
-                        ';
                     }
                 ?>
             </div>
