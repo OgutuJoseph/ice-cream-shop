@@ -96,9 +96,9 @@
         }
 
         $delete_product = $conn->prepare("DELETE FROM `products` WHERE id = ?");
-        $delete_image->execute([$product_id]);
+        $delete_product->execute([$product_id]);
+        header("location:view_products.php");
         $success_msg[] = "Product Deleted Successfully.";
-        // header("location:view_products.php");
     }
 
 ?>
