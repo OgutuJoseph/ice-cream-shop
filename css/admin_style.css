@@ -781,6 +781,30 @@ header .right {
     text-transform: none;
 }
 
+.user-cotainer .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    text-transform: capitalize;
+    line-height: 2;
+    color: gray;
+    margin-bottom: 4rem;
+}
+
+.user-cotainer .box-container .box span {
+    text-transform: none;
+}
+
+.user-cotainer .box-container .box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    padding: .5rem;
+    background-color: var(--white-alpha-40);
+    margin-top: -5%;
+    margin-bottom: 1rem;
+}
+
 /*--------------- Media screen -------------*/
 @media screen and (max-width:991px) {
     .toggle-btn {
