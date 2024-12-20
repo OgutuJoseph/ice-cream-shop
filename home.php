@@ -24,6 +24,35 @@
     <?php
         include 'components/user_header.php';
     ?>
+    <!-- Slider Section Start -->
+     <div class="slider-container">
+        <div class="slider">
+            <div class="slideBox active">
+                <div class="textBox">
+                    <h1>We pride ourselves in <br>exceptional flavours</h1>
+                    <a href="menu.php" class="btn">Shop Now</a>
+                </div>
+                <div class="imgBox">
+                    <img src="image/slider.jpg">
+                </div>
+            </div>
+            <div class="slideBox">
+                <div class="textBox">
+                    <h1>Cold treats are my kind <br>of comfort food</h1>
+                    <a href="menu.php" class="btn">Shop Now</a>
+                </div>
+                <div class="imgBox">
+                    <img src="image/slider0.jpg">
+                </div>
+            </div>
+        </div>
+        <ul class="controls"> 
+            <li onclick="nextSlide();" class="next"><i class="bx bx-right-arrow-alt"></i></li>
+            <li onclick="prevSlide();" class="prev"><i class="bx bx-left-arrow-alt"></i></li>
+        </ul>
+     </div>
+    <!-- Slider Section End -->
+
 
     <!-- Sweet Alert CDN Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
