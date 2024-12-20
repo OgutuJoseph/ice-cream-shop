@@ -461,6 +461,74 @@ input[type='submit']:hover {
     color: var(--main-color);
 }
 
+/*--------------- Slider section -------------*/
+.slider-container {
+    position: relative;
+    width: 100%;
+    min-height: 110vh;
+    margin-bottom: 5rem;
+}
+
+.slider-container .slideBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.slider-container .slideBox.active {
+    opacity: 1;
+}
+
+.slider-container .textBox {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    text-align: center;
+}
+
+.slider-container .imgBox img {
+    width: 100%;
+    height: 110vh;
+}
+
+.slider-container .textBox h1 {
+    font-size: 3rem;
+    color: #000;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.slider-container .textBox p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+.slider-container .controls {
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
+.slider-container .controls li {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container .controls i {
+    font-size: 2rem;
+}
+
+
 /*--------------- Media screen -------------*/
 @media (max-width:991px) {
     #search-btn,
