@@ -17,3 +17,23 @@ document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active');
 }
 
+/*************** Slider ********************/
+const imgBox = document.querySelector('.slider-container');
+const slides = document.getElementsByClassName('slideBox');
+var i = 0;
+
+function nextSlide() {
+    console.log('here,,,next')
+    slides[i].classList.remove('active');
+    i = (i + 1)% slides.length;
+    slides[i].classList.add('active');
+}
+
+function prevSlide() {
+    console.log('here,,,prev')
+    slides[i].classList.remove('active');
+    i = (i - 1 + slides.length) % slides.length;
+    slides[i].classList.add('active');
+}
+
+
