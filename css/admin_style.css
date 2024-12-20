@@ -287,6 +287,10 @@ section,
     height: 30rem;
 }
 
+.post-editor input[type='submit'] {
+    width: 49%;
+}
+
 /*--------------- Header section -------------*/
 header {
     position: fixed;
@@ -336,6 +340,7 @@ header .right {
     text-align: center;
     overflow: hidden;
     display: none;
+    /* transition: .5s; */
 }
 
 @keyFrames fadeIn {
@@ -659,10 +664,6 @@ header .right {
     margin-top: .8rem;
 }
 
-.post-editor input[type='submit'] {
-    width: 49%;
-}
-
 /*--------------- Profile section -------------*/
 .seller-profile .details {
     background-color: var(--white-alpha-25);
@@ -779,6 +780,30 @@ header .right {
 
 .order-container .box-container .box span {
     text-transform: none;
+}
+
+.user-cotainer .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    text-transform: capitalize;
+    line-height: 2;
+    color: gray;
+    margin-bottom: 4rem;
+}
+
+.user-cotainer .box-container .box span {
+    text-transform: none;
+}
+
+.user-cotainer .box-container .box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    padding: .5rem;
+    background-color: var(--white-alpha-40);
+    margin-top: -5%;
+    margin-bottom: 1rem;
 }
 
 /*--------------- Media screen -------------*/
