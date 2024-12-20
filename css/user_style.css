@@ -420,7 +420,7 @@ input[type='submit']:hover {
     }
 }
 
-.profile-detail.active {
+.header .flex .profile-detail.active {
     display: inline-block;
 }
 
@@ -464,4 +464,60 @@ input[type='submit']:hover {
 
 .header .navbar a:hover {
     color: var(--main-color);
+}
+
+/*--------------- Media screen -------------*/
+@media (max-width:991px) {
+    #search-btn,
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .flex .search-form {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        width: auto;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+
+    .header .flex .search-form.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .flex .navbar {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-top: .1rem solid #fff3;
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .5s;
+    }
+
+    .header .flex .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .flex .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        padding: 1rem;
+        background-color: var(--main-color);
+        text-align: center;
+        border-radius: .5rem;
+        color: #fff;
+    }
+
+    .header .flex .navbar a:hover {
+        color: #000;
+    }
 }
