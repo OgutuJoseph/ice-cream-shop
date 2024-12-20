@@ -53,6 +53,85 @@
      </div>
     <!-- Slider Section End -->
 
+    <!-- Service Section Start -->
+     <div class="service">
+        <div class="box-container">
+            <div class="box">
+                <div class="icon">
+                    <div class="icon-box">
+                        <img src="image/services.png" class="img1" >
+                        <img src="image/services (1).png" class="img2" >
+                    </div>
+                </div>
+                <div class="detail">
+                    <h4>Delivery</h4>
+                    <span>100% Secure</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <div class="icon-box">
+                        <img src="image/services (2).png" class="img1" >
+                        <img src="image/services (3).png" class="img2" >
+                    </div>
+                </div>
+                <div class="detail">
+                    <h4>Payment</h4>
+                    <span>100% Secure</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <div class="icon-box">
+                        <img src="image/services (5).png" class="img1" >
+                        <img src="image/services (6).png" class="img2" >
+                    </div>
+                </div>
+                <div class="detail">
+                    <h4>Support</h4>
+                    <span>24/7 Hours</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <div class="icon-box">
+                        <img src="image/service.png" class="img1" >
+                        <img src="image/service (1).png" class="img2" >
+                    </div>
+                </div>
+                <div class="detail">
+                    <h4>Returns</h4>
+                    <span>24/7 Free Returns</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <div class="icon-box">
+                        <img src="image/services (7).png" class="img1" >
+                        <img src="image/services (8).png" class="img2" >
+                    </div>
+                </div>
+                <div class="detail">
+                    <h4>Gift</h4>
+                    <span>Available Gift Services</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <div class="icon-box">
+                        <img src="image/services.png" class="img1" >
+                        <img src="image/services (1).png" class="img2" >
+                    </div>
+                </div>
+                <div class="detail">
+                    <h4>Delivery</h4>
+                    <span>100% Secure</span>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Service Section End -->
+
 
     <!-- Sweet Alert CDN Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
