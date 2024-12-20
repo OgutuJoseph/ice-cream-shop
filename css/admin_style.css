@@ -287,6 +287,10 @@ section,
     height: 30rem;
 }
 
+.post-editor input[type='submit'] {
+    width: 49%;
+}
+
 /*--------------- Header section -------------*/
 header {
     position: fixed;
@@ -336,6 +340,7 @@ header .right {
     text-align: center;
     overflow: hidden;
     display: none;
+    /* transition: .5s; */
 }
 
 @keyFrames fadeIn {
@@ -657,10 +662,6 @@ header .right {
 .read-post form .flex-btn a {
     height: 50px;
     margin-top: .8rem;
-}
-
-.post-editor input[type='submit'] {
-    width: 49%;
 }
 
 /*--------------- Profile section -------------*/
