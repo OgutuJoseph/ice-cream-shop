@@ -13,7 +13,7 @@
 
             if ($select_profile->rowCount() > 0) {
                 $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
-            }
+            
         ?>
         <div class="profile">
             <img src="../uploaded_files/<?= $fetch_profile['image']; ?>" class="logo-img" width="60" >
@@ -23,6 +23,9 @@
                 <a href="../components/admin_logout.php" onclick="return confirm('Logout from this website?');" class="btn">Logout</a>
             </div>
         </div>
+        <?php 
+            }
+        ?>
     </div>
 </header>
 <!-- <br/> <br/> <br/><br/><br/> -->
@@ -34,12 +37,15 @@
 
             if ($select_profile->rowCount() > 0) {
                 $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
-            }
+            
         ?>
         <div class="profile">
             <img src="../uploaded_files/<?= $fetch_profile['image']; ?>" class="logo-img" width="60" >
             <p><?= $fetch_profile['name'] ?></p>
         </div>
+        <?php
+            }
+        ?>
         <h5>Menu</h5>
         <div class="navbar">
             <ul>
