@@ -528,6 +528,55 @@ input[type='submit']:hover {
     font-size: 2rem;
 }
 
+/*--------------- Services section -------------*/
+.service {
+    padding: 6%;
+}
+
+.service .box-container .box {
+    background-color: var(--pink-opacity);
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.service .box-container .box .detail {
+    border-left: 1px solid #000;
+    padding-left: 2rem;
+}
+
+.service .box-container .box h4 {
+    font-size: 1.5rem;
+}
+
+.service .box-container .box .icon {
+    cursor: pointer;
+    overflow: hidden;
+    width: 130px;
+}
+
+.service .box-container .box .icon-box {
+    display: flex;
+    width: 200%;
+    transition: .2s ease-in-out;
+}
+
+.service .box-container .box .icon-box .img1,
+.service .box-container .box .icon-box .img2 {
+    flex: 1 0 50%;
+    width: 40px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.service .box-container .box:hover .icon-box {
+    transform: translateX(-50%);
+}
 
 /*--------------- Media screen -------------*/
 @media (max-width:991px) {
