@@ -835,6 +835,53 @@ input[type='submit']:hover {
     margin-bottom: 2rem;
 }
 
+/*--------------- Categories section -------------*/
+.usage {
+    background-image: url('../image/bn.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 4%;
+}
+
+.usage .row {
+    display: flex;
+    align-items: center;
+}
+
+.usage .row .divider {
+    padding: 1rem;
+    width: 45%;
+}
+
+.usage .row .box-container .box {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    align-items: center;
+}
+
+.usage .row .box-container .box img {
+    width: 70px;
+    height: 70px;
+    margin-left: .4rem;
+}
+
+.usage .row .box-container .box h3 {
+    font-size: 1.5rem;
+}
+
+.usage .row .box-container .box p {
+    color: #666;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.usage .row .box-container:first-child {
+    text-align: right;
+}
+
 
 
 
