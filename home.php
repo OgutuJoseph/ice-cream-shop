@@ -59,8 +59,8 @@
             <div class="box">
                 <div class="icon">
                     <div class="icon-box">
-                        <img src="image/services.png" class="img1" >
-                        <img src="image/services (1).png" class="img2" >
+                        <img src="image/services-1-black.png" class="img1" >
+                        <img src="image/services-1-white.png" class="img2" >
                     </div>
                 </div>
                 <div class="detail">
@@ -71,8 +71,8 @@
             <div class="box">
                 <div class="icon">
                     <div class="icon-box">
-                        <img src="image/services (2).png" class="img1" >
-                        <img src="image/services (3).png" class="img2" >
+                        <img src="image/services-2-black.png" class="img1" >
+                        <img src="image/services-2-white.png" class="img2" >
                     </div>
                 </div>
                 <div class="detail">
@@ -83,8 +83,8 @@
             <div class="box">
                 <div class="icon">
                     <div class="icon-box">
-                        <img src="image/services (5).png" class="img1" >
-                        <img src="image/services (6).png" class="img2" >
+                        <img src="image/services-3-black.png" class="img1" >
+                        <img src="image/services-3-white.png" class="img2" >
                     </div>
                 </div>
                 <div class="detail">
@@ -95,8 +95,8 @@
             <div class="box">
                 <div class="icon">
                     <div class="icon-box">
-                        <img src="image/service.png" class="img1" >
-                        <img src="image/service (1).png" class="img2" >
+                        <img src="image/services-4-black.png" class="img1" >
+                        <img src="image/services-4-white.png" class="img2" >
                     </div>
                 </div>
                 <div class="detail">
@@ -107,8 +107,8 @@
             <div class="box">
                 <div class="icon">
                     <div class="icon-box">
-                        <img src="image/services (7).png" class="img1" >
-                        <img src="image/services (8).png" class="img2" >
+                        <img src="image/services-5-black.png" class="img1" >
+                        <img src="image/services-5-white.png" class="img2" >
                     </div>
                 </div>
                 <div class="detail">
@@ -119,8 +119,8 @@
             <div class="box">
                 <div class="icon">
                     <div class="icon-box">
-                        <img src="image/services.png" class="img1" >
-                        <img src="image/services (1).png" class="img2" >
+                        <img src="image/services-1-black.png" class="img1" >
+                        <img src="image/services-1-white.png" class="img2" >
                     </div>
                 </div>
                 <div class="detail">
@@ -131,6 +131,33 @@
         </div>
      </div>
     <!-- Service Section End -->
+
+    <!-- Categories Section Start -->
+     <div class="categories">
+        <div class="heading">
+            <h1>Categories Featured</h1>
+            <img src="image/separator-img.png" >
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/categories-1.jpg" >
+                <a href="menu.php" class="btn">Coconut</a>
+            </div>
+            <div class="box">
+                <img src="image/categories-2.jpg" >
+                <a href="menu.php" class="btn">Chocolate</a>
+            </div>
+            <div class="box">
+                <img src="image/categories-3.jpg" >
+                <a href="menu.php" class="btn">Corn</a>
+            </div>
+            <div class="box">
+                <img src="image/categories-4.jpg" >
+                <a href="menu.php" class="btn">Strawberry</a>
+            </div>
+        </div>
+     </div>
+    <!-- Categories Section End -->
 
 
     <!-- Sweet Alert CDN Link -->

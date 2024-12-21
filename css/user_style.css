@@ -578,6 +578,44 @@ input[type='submit']:hover {
     transform: translateX(-50%);
 }
 
+/*--------------- Categories section -------------*/
+.categories {
+    padding: 4%;
+}
+
+.categories .box-container {
+    padding-top: 4%;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.categories .box-container .box {
+    margin: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.categories .box-container .box:hover img {
+    transform: scale(1.1);
+}
+
+.categories .box-container img {
+    width: 100%;
+    transition: .5s;
+}
+
+.categories .box-container .box a {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 11;
+    width: 90%;
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+
 /*--------------- Media screen -------------*/
 @media (max-width:991px) {
     #search-btn,
