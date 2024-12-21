@@ -702,7 +702,7 @@ input[type='submit']:hover {
 }
 
 .taste2 .t-banner {
-    background-image: url('../image/ng');
+    background-image: url('../image/bg.png');
     min-height: 40vh;
     border-radius: 20px;
     position: relative;
@@ -739,7 +739,7 @@ input[type='submit']:hover {
 }
 
 .taste2 .box-container .box {
-    position: relative;
+    position: relative;  
 }
 
 .taste2 .box-container .box img {
@@ -751,14 +751,60 @@ input[type='submit']:hover {
     background-color: var(--pink-opacity);
     height: 99%;
     width: 100%;
-    top: 0;
     left: 0;
-    right: 0;
+    top: 0;
     bottom: 0;
+    right: 0;
     opacity: 0;
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
+}
+
+.taste2 .box-container .box:hover .box-overlay {
+    opacity: .7;
+}
+
+.taste2 .box-container .box .box-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.taste2 .box-container .box:hover .box-details {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+}
+
+.taste2 .box-container .box .box-details h1 {
+    color: var(--main-color);
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.taste2 .box-container .box .box-details p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.fadeIn-bottom {
+    top: 80%;
 }
 
 
