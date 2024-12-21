@@ -353,6 +353,11 @@
     </div>
     <!-- Pride Section End -->
 
+    
+    <?php
+        include 'components/user_footer.php';
+    ?>
+
     <!-- Sweet Alert CDN Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <!-- Custom JS Link -->
