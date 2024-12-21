@@ -274,6 +274,90 @@
     </div>
     <!-- Taste2 Section End -->
 
+    <!-- Flavour Section Start -->
+    <div class="flavour">
+        <div class="box-container">
+            <img src="image/left-banner2.webp" >
+            <div class="detail">
+                <h1>Hot Deal ! Sale Up To <span>20% Off</span></h1>
+                <p>Expired</p>
+                <a href="menu.php" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Flavour Section End -->
+
+    <!-- Usage Section Start -->
+    <div class="usage">
+        <div class="heading">
+            <h1>How it works</h1>
+            <img src="image/separator-img.png">
+        </div>
+        <div class="row">
+            <div class="box-container">
+                <div class="box">
+                    <img src="image/icon-1.avif" >
+                    <div class="detail">
+                        <h3>Scoop Ice Cream</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/icon-2.avif" >
+                    <div class="detail">
+                        <h3>Scoop Ice Cream</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/icon-3.avif" >
+                    <div class="detail">
+                        <h3>Scoop Ice Cream</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/icon-4.avif" >
+                    <div class="detail">
+                        <h3>Scoop Ice Cream</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/icon-5.avif" >
+                    <div class="detail">
+                        <h3>Scoop Ice Cream</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/icon-6.avif" >
+                    <div class="detail">
+                        <h3>Scoop Ice Cream</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="image/sub-banner.png" class="divider" >
+        </div>
+    </div>
+    <!-- Usage Section End -->
+    
+    <!-- Pride Section Start -->
+    <div class="pride">
+        <div class="detail">
+            <h1>We Pride Ourselves In <br> Exceptional Flavours.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
+            <a href="menu.php" class="btn">Shop Now</a>
+        </div>
+    </div>
+    <!-- Pride Section End -->
+
+    
+    <?php
+        include 'components/user_footer.php';
+    ?>
+
     <!-- Sweet Alert CDN Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <!-- Custom JS Link -->
