@@ -274,6 +274,19 @@
     </div>
     <!-- Taste2 Section End -->
 
+    <!-- Flavour Section Start -->
+    <div class="flavour">
+        <div class="box-container">
+            <img src="image/left-banner2.webp" >
+            <div class="detail">
+                <h1>Hot Deal ! Sale Up To <span>20% Off</span></h1>
+                <p>Expired</p>
+                <a href="menu.php" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Flavour Section End -->
+
     <!-- Sweet Alert CDN Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <!-- Custom JS Link -->

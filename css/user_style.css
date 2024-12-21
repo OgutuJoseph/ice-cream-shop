@@ -807,6 +807,34 @@ input[type='submit']:hover {
     top: 80%;
 }
 
+/*--------------- Flavour section -------------*/
+.flavour .box-container {
+    background-color: var(--pink-opacity);
+}
+
+.flavour .box-container img {
+    width: 100%;
+}
+
+.flavour .box-container .detail {
+    text-align: center;
+    line-height: 1.5;
+    padding: 2rem 0;
+}
+
+.flavour .box-container .detail h1 {
+    font-size: 3rem;
+}
+
+.flavour .box-container .detail h1 span {
+    color: var(--main-color);
+}
+
+.flavour .box-container .detail p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
 
 
 
