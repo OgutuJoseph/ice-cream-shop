@@ -342,6 +342,16 @@
         </div>
     </div>
     <!-- Usage Section End -->
+    
+    <!-- Pride Section Start -->
+    <div class="pride">
+        <div class="detail">
+            <h1>We Pride Ourselves In <br> Exceptional Flavours.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
+            <a href="menu.php" class="btn">Shop Now</a>
+        </div>
+    </div>
+    <!-- Pride Section End -->
 
     <!-- Sweet Alert CDN Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

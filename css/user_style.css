@@ -835,7 +835,7 @@ input[type='submit']:hover {
     margin-bottom: 2rem;
 }
 
-/*--------------- Categories section -------------*/
+/*--------------- Usage section -------------*/
 .usage {
     background-image: url('../image/bn.png');
     background-repeat: no-repeat;
@@ -881,6 +881,33 @@ input[type='submit']:hover {
 .usage .row .box-container:first-child {
     text-align: right;
 }
+
+/*--------------- Pride section -------------*/
+.pride {
+    background-image: url('../image/ice-creem-banner-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 80px 0 80px 0;
+    padding: 220px 0 273px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.pride .detail {
+    padding-right: 10%;
+}
+
+.pride .detail p {
+    color: #666;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
 
 
 
