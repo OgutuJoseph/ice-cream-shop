@@ -653,6 +653,115 @@ input[type='submit']:hover {
     outline-offset: -.2rem;
 }
 
+/*--------------- Container section -------------*/
+.ice-container {
+    position: relative;
+    background-image: url('../image/ice-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.ice-container .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .5;
+}
+
+.ice-container .detail {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: #fff;
+}
+
+.ice-container .detail h1 {
+    font-size: 3rem;
+}
+
+.ice-container .detail p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-bottom: 2em;
+}
+
+.ice-container .detail .btn {
+    /* background-color: #000; */
+}
+
+/*--------------- Taste 2 section -------------*/
+.taste2 {
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.taste2 .t-banner {
+    background-image: url('../image/ng');
+    min-height: 40vh;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    margin: 1rem;
+}
+
+.taste2 .t-banner .overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff99;
+}
+
+.taste2 .t-banner .detail {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    line-height: 1.5;
+}
+
+.taste2 .t-banner .detail p {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.taste2 .t-banner .detail h1 {
+    text-transform: capitalize;
+}
+
+.taste2 .box-container .box {
+    position: relative;
+}
+
+.taste2 .box-container .box img {
+    width: 100%;
+}
+
+.taste2 .box-container .box .box-overlay {
+    position: absolute;
+    background-color: var(--pink-opacity);
+    height: 99%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+
 
 
 /*--------------- Media screen -------------*/
