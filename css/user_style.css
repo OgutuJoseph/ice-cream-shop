@@ -653,6 +653,50 @@ input[type='submit']:hover {
     outline-offset: -.2rem;
 }
 
+/*--------------- Container section -------------*/
+.ice-container {
+    position: relative;
+    background-image: url('../image/ice-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.ice-container .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .5;
+}
+
+.ice-container .detail {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: #fff;
+}
+
+.ice-container .detail h1 {
+    font-size: 3rem;
+}
+
+.ice-container .detail p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-bottom: 2em;
+}
+
+.ice-container .detail .btn {
+    /* background-color: #000; */
+}
+
+
+
 
 
 /*--------------- Media screen -------------*/

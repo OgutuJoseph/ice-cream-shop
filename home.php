@@ -194,6 +194,16 @@
      </div>
     <!-- Taste Section Start -->
 
+    <!-- Container Section Start -->
+    <div class="ice-container">
+        <div class="overlay"></div>
+        <div class="detail">
+            <h1>Ice Cream is cheaper than <br> therapy for stress</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan. Etiam quis libero commodo, maximus magna ac, lobortis dui. In at felis laoreet, posuere metus eget, dictum ex. Nam pulvinar vestibulum dolor vel dignissim. Quisque pellentesque dapibus leo, a efficitur eros ullamcorper eu. Quisque faucibus libero quis libero lobortis facilisis. Morbi ac neque lacinia, iaculis orci at, eleifend nisl. Aenean congue ex vestibulum nibh euismod interdum</p>
+            <a href="menu.php" class="btn">Shop Now</a>
+        </div>
+    </div>
+    <!-- Container Section End -->
 
     <!-- Sweet Alert CDN Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
