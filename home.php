@@ -192,7 +192,7 @@
             </div>
         </div>
      </div>
-    <!-- Taste Section Start -->
+    <!-- Taste Section End -->
 
     <!-- Container Section Start -->
     <div class="ice-container">
@@ -204,6 +204,75 @@
         </div>
     </div>
     <!-- Container Section End -->
+
+    <!-- Taste2 Section Start -->
+    <div class="taste2">
+        <div class="t-banner">
+            <div class="overlay"></div>
+            <div class="detail">                
+                <h1>Find your taste of desserts</h1>
+                <p>Treat them to a delicious treat and send some Luck o' the Kenya too!</p>
+                <a href="menu.php" class="btn">Shop Now</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="box-overlay"></div>
+                <img src="image/type-1.jpg" >
+                <div class="box-details fadeIn-bottom">
+                    <h1>Strawberry</h1>
+                    <p>Find your taste of desserts</p>
+                    <a href="menu.php" class="btn">Explore more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-overlay"></div>
+                <img src="image/type-2.avif" >
+                <div class="box-details fadeIn-bottom">
+                    <h1>Strawberry</h1>
+                    <p>Find your taste of desserts</p>
+                    <a href="menu.php" class="btn">Explore more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-overlay"></div>
+                <img src="image/type-3.png" >
+                <div class="box-details fadeIn-bottom">
+                    <h1>Strawberry</h1>
+                    <p>Find your taste of desserts</p>
+                    <a href="menu.php" class="btn">Explore more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-overlay"></div>
+                <img src="image/type-4.png" >
+                <div class="box-details fadeIn-bottom">
+                    <h1>Strawberry</h1>
+                    <p>Find your taste of desserts</p>
+                    <a href="menu.php" class="btn">Explore more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-overlay"></div>
+                <img src="image/type-5.avif" >
+                <div class="box-details fadeIn-bottom">
+                    <h1>Strawberry</h1>
+                    <p>Find your taste of desserts</p>
+                    <a href="menu.php" class="btn">Explore more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-overlay"></div>
+                <img src="image/type-1.jpg" >
+                <div class="box-details fadeIn-bottom">
+                    <h1>Strawberry</h1>
+                    <p>Find your taste of desserts</p>
+                    <a href="menu.php" class="btn">Explore more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Taste2 Section End -->
 
     <!-- Sweet Alert CDN Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

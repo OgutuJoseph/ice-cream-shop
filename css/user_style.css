@@ -695,6 +695,71 @@ input[type='submit']:hover {
     /* background-color: #000; */
 }
 
+/*--------------- Taste 2 section -------------*/
+.taste2 {
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.taste2 .t-banner {
+    background-image: url('../image/ng');
+    min-height: 40vh;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    margin: 1rem;
+}
+
+.taste2 .t-banner .overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff99;
+}
+
+.taste2 .t-banner .detail {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    line-height: 1.5;
+}
+
+.taste2 .t-banner .detail p {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.taste2 .t-banner .detail h1 {
+    text-transform: capitalize;
+}
+
+.taste2 .box-container .box {
+    position: relative;
+}
+
+.taste2 .box-container .box img {
+    width: 100%;
+}
+
+.taste2 .box-container .box .box-overlay {
+    position: absolute;
+    background-color: var(--pink-opacity);
+    height: 99%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
 
 
 
