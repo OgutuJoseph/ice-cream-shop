@@ -159,6 +159,41 @@
      </div>
     <!-- Categories Section End -->
 
+    <img src="image/menu-banner.jpg" class="menu-banner" >
+
+    <!-- Taste Section Start -->
+     <div class="taste">
+        <div class="heading">
+            <span>Taste</span>
+            <h1>Buy any ice cream and get one free</h1>
+            <img src="image/separator-img.png" >
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/taste-1.webp" >
+                <div class="detail">
+                    <h2>Natural Sweetness</h2>
+                    <h1>Vanilla</h1>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/taste-2.webp" >
+                <div class="detail">
+                    <h2>Natural Sweetness</h2>
+                    <h1>Matcha</h1>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/taste-3.webp" >
+                <div class="detail">
+                    <h2>Natural Sweetness</h2>
+                    <h1>Blue Berry</h1>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Taste Section Start -->
+
 
     <!-- Sweet Alert CDN Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
