@@ -31,25 +31,25 @@
         </div>
         <div class="box">
             <h3>My Account</h3>
-            <a href=""><i class="bx bx-chevron-right"></i>My Account</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Order History</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Wishlist</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Newsletter</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>My Account</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Order History</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Wishlist</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Newsletter</a>
         </div>
         <div class="box">
             <h3>Information</h3>
-            <a href=""><i class="bx bx-chevron-right"></i>About Us</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Delivery Information</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Privacy Policy</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Terms and Condition</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>About Us</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Delivery Information</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Privacy Policy</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Terms and Condition</a>
         </div>
         
         <div class="box">
             <h3>Extras</h3>
-            <a href=""><i class="bx bx-chevron-right"></i>Brands</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Gift Certification</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Affiliate</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Specials</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Brands</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Gift Certification</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Affiliate</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Specials</a>
         </div>
         <div class="box">
             <h3>Contact Us</h3>

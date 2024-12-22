@@ -35,6 +35,28 @@
     </div>
     <!-- Banner Section End -->
 
+    <!-- Chef Section Start -->
+    <div class="chef">
+        <div class="box-container">
+            <div class="box">
+                <div class="heading">
+                    <span>Alex Doe</span>
+                    <h1>Masterchef</h1>
+                    <img src="image/separator-img.png" >
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
+                <div class="flex-btn">
+                    <a href="#" class="btn">Explore Our Menu</a>
+                    <a href="#" class="btn">Visit Our Shop</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/chef.png" class="img" >
+            </div>
+        </div>
+    </div>
+    <!-- Chef Section End -->
+
   
 
     

@@ -129,7 +129,7 @@ input[type='submit']:hover {
 
 .flex-btn {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .flex-btn .btn {
@@ -1078,6 +1078,28 @@ footer .bottom a {
     color: #000;
 }
 
+/*--------------- About Us Page -------------*/
+.chef {
+    padding-left: 4%;
+}
+
+.chef .box {
+    line-height: 1.5;
+    text-align: center;
+    box-shadow: none;
+    background-color: black;
+}
+
+.chef .box .img {
+    width: 70%;
+    margin-bottom: -2rem;
+}
+
+.chef .box p {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
 
 
 
