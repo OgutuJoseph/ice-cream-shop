@@ -1,7 +1,7 @@
 <div class="newsletter">
     <div class="content">
         <span>Get Latest Blue Sky Summer Updates</span>
-        <h1>Subscribe to our newsletter</h1>
+        <h1>Subscribe To Our Newsletter</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
         <div class="input-field">
             <input type="email" name="" placeholder="Enter Your Email" >
@@ -31,25 +31,25 @@
         </div>
         <div class="box">
             <h3>My Account</h3>
-            <a href=""><i class="bx bx-chevron-right"></i>My Account</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Order History</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Wishlist</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Newsletter</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>My Account</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Order History</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Wishlist</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Newsletter</a>
         </div>
         <div class="box">
             <h3>Information</h3>
-            <a href=""><i class="bx bx-chevron-right"></i>About Us</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Delivery Information</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Privacy Policy</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Terms and Condition</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>About Us</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Delivery Information</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Privacy Policy</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Terms and Condition</a>
         </div>
         
         <div class="box">
             <h3>Extras</h3>
-            <a href=""><i class="bx bx-chevron-right"></i>Brands</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Gift Certification</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Affiliate</a>
-            <a href=""><i class="bx bx-chevron-right"></i>Specials</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Brands</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Gift Certification</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Affiliate</a>
+            <a href="#"><i class="bx bx-chevron-right"></i>Specials</a>
         </div>
         <div class="box">
             <h3>Contact Us</h3>
