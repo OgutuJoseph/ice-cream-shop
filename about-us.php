@@ -1,0 +1,53 @@
+<?php 
+    include 'components/connect.php';
+
+    if (isset($_COOKIE['user_id'])) {
+        $user_id = $_COOKIE['user_id'];
+    } else {
+        $user_id = '';
+    }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Shop | About Us</title>
+    <link rel="stylesheet" type="text/css" href="css/user_style.css" >
+    <!-- Font Awesome CDN Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" >
+     <!-- Box Icon CDN Link -->
+     <!-- <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> -->
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" >
+</head>
+<body>
+    <?php
+        include 'components/user_header.php';
+    ?>
+    <!-- Banner Section Start -->
+    <div class="banner">
+        <div class="detail">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. <br>
+            In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
+            <span><a href="home.php">Home</a><i class="bx bx-right-arrow-alt"></i>About Us</span>
+        </div>
+    </div>
+    <!-- Banner Section End -->
+
+  
+
+    
+    <?php
+        include 'components/user_footer.php';
+    ?>
+
+    <!-- Sweet Alert CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <!-- Custom JS Link -->
+    <script src="js/user_script.js"></script>
+    <?php
+        include 'components/alert.php';
+    ?>
+</body>
+</html>

@@ -1,7 +1,7 @@
 <div class="newsletter">
     <div class="content">
         <span>Get Latest Blue Sky Summer Updates</span>
-        <h1>Subscribe to our newsletter</h1>
+        <h1>Subscribe To Our Newsletter</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
         <div class="input-field">
             <input type="email" name="" placeholder="Enter Your Email" >

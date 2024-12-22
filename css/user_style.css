@@ -147,9 +147,14 @@ input[type='submit']:hover {
 }
 
 .banner .detail {
-    place-content: 4%;
+    padding-left: 4%;
     color: gray;
     line-height: 1.5;
+}
+
+.banner .detail h1 {
+    text-transform: capitalize;
+    color: #000;
 }
 
 .banner .detail p {

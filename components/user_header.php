@@ -3,7 +3,7 @@
         <a href="home.php" class="logo"><img src="image/logo.png" width="130px"></a>
         <nav class="navbar">
             <a href="home.php">Home</a>
-            <a href="abount-us.php">About Us</a>
+            <a href="about-us.php">About Us</a>
             <a href="menu.php">Menu</a>
             <a href="order.php">Order</a>
             <a href="contact.php">Contact</a>
