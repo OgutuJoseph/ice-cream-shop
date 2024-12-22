@@ -1087,7 +1087,6 @@ footer .bottom a {
     line-height: 1.5;
     text-align: center;
     box-shadow: none;
-    background-color: black;
 }
 
 .chef .box .img {
@@ -1099,6 +1098,26 @@ footer .bottom a {
     font-size: 1.3rem;
     color: #666;
     margin-bottom: 2rem;
+}
+
+.story {
+    background-image: url('../image/about_bg.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.story p {
+    padding-bottom: 2rem;
+    color: gray;
 }
 
 

@@ -57,6 +57,23 @@
     </div>
     <!-- Chef Section End -->
 
+    <!-- Story Section Start -->
+    <div class="story">
+        <div class="heading">
+            <h1>Our Story</h1>
+            <img src="image/separator-img.png" >
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <br>Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. 
+            <br>In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan. 
+            <br> Etiam quis libero commodo, maximus magna ac, lobortis dui. In at felis laoreet, posuere metus eget, dictum ex. 
+            <br> Nam pulvinar vestibulum dolor vel dignissim. Quisque pellentesque dapibus leo, a efficitur eros ullamcorper eu. 
+            <br> Quisque faucibus libero quis libero lobortis facilisis. Morbi ac neque lacinia, iaculis orci at, eleifend nisl. Aenean congue ex vestibulum nibh euismod interdum
+        </p>
+        <a href="menu.php" class="btn">Our Services</a>
+    </div>
+    <!-- Story Section End -->
+
   
 
     
