@@ -1120,6 +1120,34 @@ footer .bottom a {
     color: gray;
 }
 
+.container {
+    padding: 4%;
+    padding-bottom: 0;
+}
+
+.container .box-container .img-box {
+    margin: 1rem;
+}
+
+.container .box-container .img-box img {
+    background-image: url('../image/shap.png');
+    background-size: contain;
+    width: 80%;
+    margin-bottom: -1.1rem;
+}
+
+.container .box-container .box {
+    text-align: center;
+    line-height: 2;
+    box-shadow: none;
+}
+
+.container .box-container p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
 
 
 /*--------------- Media screen -------------*/

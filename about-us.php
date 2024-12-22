@@ -74,7 +74,23 @@
     </div>
     <!-- Story Section End -->
 
-  
+    <!-- Story Section Start -->
+    <div class="container">
+        <div class="box-container">
+            <div class="img-box">
+                <img src="image/about.png" >
+            </div>
+            <div class="box">
+                <div class="heading">
+                    <h1>Taking Ice Cream To New Heights</h1>
+                    <img src="image/separator-img.png" >
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan. Etiam quis libero commodo, maximus magna ac, lobortis dui. In at felis laoreet, posuere metus eget, dictum ex. Nam pulvinar vestibulum dolor vel dignissim. Quisque pellentesque dapibus leo, a efficitur eros ullamcorper eu. Quisque faucibus libero quis libero lobortis facilisis. Morbi ac neque lacinia, iaculis orci at, eleifend nisl. Aenean congue ex vestibulum nibh euismod interdum.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <!-- Story Section End -->
 
     
     <?php
