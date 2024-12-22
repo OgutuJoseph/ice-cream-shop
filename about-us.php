@@ -151,6 +151,66 @@
     </div>  
     <!-- Standards Section End -->
 
+    <!-- Testimonial Section Start -->
+    <div class="testimonial">
+        <div class="heading">
+            <h1>Testimonials</h1>
+            <img src="image/separator-img.png" >
+        </div>
+        <div class="testimonial-container">
+            <div class="slide-row" id="slide">
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Zen Doan is a business analyst, entrepreneur, media proprietor and investor. She is also known as the best selling book author. </p>
+                        <h2>Zen</h2>
+                        <p>Author</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="image/testimonial-1.jpg" >
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Yusef Malik is a top footballer in the region. He happens to be the man. </p>
+                        <h2>Yusef</h2>
+                        <p>Footballer</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="image/testimonial-2.jpg" >
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Elaine Smith is an actress and model. She is best known to be the woman and the myth of them all. </p>
+                        <h2>Elaine</h2>
+                        <p>Actress</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="image/testimonial-3.jpg" >
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Wright Philips is a business mogul. He is the chief investor of the biggest stocks and stakes ever known.</p>
+                        <h2>Wright</h2>
+                        <p>Business Man</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="image/testimonial-4.jpg" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indicator">
+            <span class="btn1 active"></span>
+            <span class="btn1"></span>
+            <span class="btn1"></span>
+            <span class="btn1"></span>
+        </div>
+    </div>
+    <!-- Testimonial Section End -->
+
+
     
     <?php
         include 'components/user_footer.php';
