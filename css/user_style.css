@@ -1148,6 +1148,48 @@ footer .bottom a {
     margin-bottom: 2rem;
 }
 
+.team {
+    background-image: url('../image/bn3.3.webp');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 6%;
+}
+
+.team .box-container .box {
+    overflow: hidden;
+}
+
+.team .box-container .box .img {
+    width: 100%;
+    transition: .5s;
+}
+
+.team .box-container .box:hover .img {
+    transform: scale(1.1);
+}
+
+.team .box-container .box .content {
+    position: relative;
+    display: block;
+    background-color: #fff;
+    padding: 43px 30px 42px 30px;
+    margin-top: -80px;
+    border-top-right-radius: 80px;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.team .box-container .box .content .shap {
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
 
 
 /*--------------- Media screen -------------*/

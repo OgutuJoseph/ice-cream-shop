@@ -74,7 +74,7 @@
     </div>
     <!-- Story Section End -->
 
-    <!-- Story Section Start -->
+    <!-- Container Section Start -->
     <div class="container">
         <div class="box-container">
             <div class="img-box">
@@ -90,7 +90,43 @@
             </div>
         </div>
     </div>
-    <!-- Story Section End -->
+    <!-- Container Section End -->
+
+    <!-- Team Section Start -->
+    <div class="team">
+        <div class="heading">
+            <span>Our Team</span>
+            <h1>Quality & Passion With Our Servies</h1>
+            <img src="image/separator-img.png" alt="" >
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/team-1.jpg" class="img" >
+                <div class="content">
+                    <img src="image/shape-19.png" alt="" class="shap" >
+                    <h2>John Doe</h2>
+                    <p>Coffee Chef</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/team-2.jpg" class="img" >
+                <div class="content">
+                    <img src="image/shape-19.png" alt="" class="shap" >
+                    <h2>Jane Doe</h2>
+                    <p>Pastry Chef</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/team-3.jpg" class="img" >
+                <div class="content">
+                    <img src="image/shape-19.png" alt="" class="shap" >
+                    <h2>Jay Dee</h2>
+                    <p>Coffee Chef</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Section End -->
 
     
     <?php
