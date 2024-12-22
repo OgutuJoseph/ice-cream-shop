@@ -128,6 +128,29 @@
     </div>
     <!-- Team Section End -->
 
+    <!-- Standards Section Start -->
+    <div class="standards">
+        <div class="detail">
+            <div>
+                <div class="heading">
+                    <h1>Our Standards</h1>
+                    <img src="image/separator-img.png" >
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <i class="bx bxs-heart"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <i class="bx bxs-heart"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <i class="bx bxs-heart"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <i class="bx bxs-heart"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <i class="bx bxs-heart"></i>
+            </div>
+        </div>
+    </div>  
+    <!-- Standards Section End -->
+
     
     <?php
         include 'components/user_footer.php';
