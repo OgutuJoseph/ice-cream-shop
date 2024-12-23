@@ -63,16 +63,6 @@
     <?php
         include 'components/user_header.php';
     ?>
-    <!-- Banner Section Start -->
-    <div class="banner">
-        <div class="detail">
-            <h1>Register</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, vehicula vel vestibulum at, egestas interdum ante. <br>
-            In luctus non justo ultricies porttitor. Etiam vehicula blandit accumsan.</p>
-            <span><a href="home.php">Home</a><i class="bx bx-right-arrow-alt"></i>Register</span>
-        </div>
-    </div>
-    <!-- Banner Section End -->
 
     <div class="form-container">
         <form action="" method="post" enctype="multipart/form-data" class="register">
