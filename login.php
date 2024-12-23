@@ -20,7 +20,7 @@
 
         if ($select_user->rowCount() > 0) {
             setcookie('user_id', $row['id'], time() + 60*60*24*30, '/');
-            header('location:dashboard.php');
+            header('location:home.php');
         } else {
             $info_msg[] = 'Incorrect username or password.';
         }
