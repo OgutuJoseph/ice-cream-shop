@@ -40,7 +40,7 @@
             <h1>Profile Detail</h1>
             <img src="image/separator-img.png" >
         </div>
-        <div class="details">
+        <div class="detail">
             <div class="user">
                 <img src="uploaded_files/<?= $fetch_profile['image']; ?>" >
                 <h3><?= $fetch_profile['name']; ?></h3>
