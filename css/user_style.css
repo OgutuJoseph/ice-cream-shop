@@ -1368,6 +1368,54 @@ footer .bottom a {
     background-color: var(--main-color);
 }
 
+.mission {
+    background-image: url('../image/bg1.webp');
+    background-position: center;
+    background-size: cover;
+    padding: 0 4%;
+    position: relative;
+}
+
+.mission .box-container .box {
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+}
+
+.mission .box-container .box .detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .6rem 0;
+}
+
+.mission .box-container .box .detail h2 {
+    color: var(--main-color);
+    margin-bottom: .5rem;
+}
+
+.mission .box-container .box .detail p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.mission .box-container .box .detail .img-box {
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.mission .box-container .box .detail .img-box img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 2px dashed var(--main-color);
+}
+
+.mission .img {
+    width: 100%;
+    margin-bottom: -3.7rem;
+}
 
 
 
