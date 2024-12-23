@@ -211,6 +211,7 @@ input[type='submit']:hover {
     min-height: 100vh;
     padding: 4% 0;
     position: relative;
+    background-image: url('../image/bg1.webp');
 }
 
 .form-container form {
