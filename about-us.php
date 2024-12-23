@@ -210,6 +210,58 @@
     </div>
     <!-- Testimonial Section End -->
 
+    <!-- Mission Section Start -->
+    <div class="mission">
+        <div class="box-container">
+            <div class="box">
+                <div class="heading">
+                    <h1>Our Mission</h1>
+                    <img src="separator-img.png" >
+                </div>
+                <div class="detail">
+                    <div class="img-box">
+                        <img src="image/mission-1.webp" >
+                    </div>
+                    <div>
+                        <h2>Meican Chocolate</h2>
+                        <p>Layers of shaped marshmallow candies - bunnies, chicks and simple flowers - make a memorable gift in a beribonned box.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="img-box">
+                        <img src="image/mission-2.webp" >
+                    </div>
+                    <div>
+                        <h2>Vanilla with Honey</h2>
+                        <p>Layers of shaped marshmallow candies - bunnies, chicks and simple flowers - make a memorable gift in a beribonned box.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="img-box">
+                        <img src="image/mission-3.jpg" >
+                    </div>
+                    <div>
+                        <h2>Peppermint Chip</h2>
+                        <p>Layers of shaped marshmallow candies - bunnies, chicks and simple flowers - make a memorable gift in a beribonned box.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="img-box">
+                        <img src="image/mission-4.webp" >
+                    </div>
+                    <div>
+                        <h2>Raspeberry Sorbat</h2>
+                        <p>Layers of shaped marshmallow candies - bunnies, chicks and simple flowers - make a memorable gift in a beribonned box.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/form.png" alt="" class="img">
+            </div>
+        </div>
+    </div>
+    <!-- Mission Section End -->
+
 
     
     <?php
